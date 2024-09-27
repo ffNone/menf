@@ -1,23 +1,25 @@
 'use client'
 
 import { XMarkIcon } from '@heroicons/react/20/solid'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import CustomBooking from "../../(form)/customBooking"
 
 export default function Prenav() {
     const [isVisible , setVisible] = useState(true);
     const [isCustomBookingModalOpen, setIsCustomBookingModalOpen] = useState(false);
+    const [formattedDate, setFormattedDate] = useState('');
+
+    // Using useEffect to set the date only on the client-side after component mounts
+    useEffect(() => {
+        const date = new Date();
+        const options = { weekday: 'long' }; // Get full name of the day (e.g., "Saturday")
+        const dayName = date.toLocaleDateString('en-US', options);
+        const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`; // Format date (e.g., "9/28/2024")
+        setFormattedDate(`${dayName}, ${formattedDate}`);
+    }, []); // Empty dependency array to ensure this runs once after component mounts
 
     const toggleCustomBookingModal = () => {
         setIsCustomBookingModalOpen(!isCustomBookingModalOpen);
-    };
-
-    const formatDate = () => {
-        const date = new Date();
-        const options = { weekday: 'long' }; // This gets the full name of the day, e.g., "Saturday"
-        const dayName = date.toLocaleDateString('en-US', options); 
-        const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`; // e.g., "9/28/2024"
-        return `${dayName}, ${formattedDate}`;
     };
 
     return (
@@ -50,7 +52,7 @@ export default function Prenav() {
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                         <p className="text-sm leading-6 text-gray-900">
-                            <strong className="font-semibold">{formatDate()}</strong>
+                            <strong className="font-semibold">{formattedDate}</strong>
                             <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline h-0.5 w-0.5 fill-current">
                                 <circle r={1} cx={1} cy={1} />
                             </svg>
