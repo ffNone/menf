@@ -57,7 +57,7 @@ export default function RootLayout({
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
                      <script src="/script/jquery.js"  ></script>
-                     <div className="gtranslate_wrapper" style={{color : '#ffdb1f', fontWeight : 'bold'}}></div>
+                     {/* <div className="gtranslate_wrapper" style={{color : '#ffdb1f', fontWeight : 'bold'}}></div> */}
          
 
       </body>
