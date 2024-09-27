@@ -14,7 +14,7 @@ export default function Prenav() {
         const date = new Date();
         const options = { weekday: 'long' }; // Get full name of the day (e.g., "Saturday")
         const dayName = date.toLocaleDateString('en-US', options);
-        const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`; // Format date (e.g., "9/28/2024")
+        const formattedDate = `${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`; // Format date (e.g., "9/28/2024")
         setFormattedDate(`${dayName}, ${formattedDate}`);
     }, []); // Empty dependency array to ensure this runs once after component mounts
 
