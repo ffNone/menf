@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "../globals.css";
 import Header from './partials/header'
 import FOOTER from './partials/footer'
-import Prenav from './partials/prenav'
+// import Prenav from './partials/prenav'
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react"
 import LoginForm from '../(form)/login'
@@ -44,7 +44,7 @@ export default function RootLayout({
         
       <Script src="/GTranslate.js"   /> 
         <Script src="https://cdn.gtranslate.net/widgets/latest/popup.js"  defer /> 
-        <Prenav/>
+        {/* <Prenav/> */}
         <Header/>
         
         {children}
