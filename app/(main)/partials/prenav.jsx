@@ -25,7 +25,7 @@ export default function Prenav() {
   }
 
   const currentDate = getCurrentDate();
-  console.log(currentDate)
+ 
   return (
     <>
         { isVisible && ( 
