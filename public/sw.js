@@ -1,5 +1,5 @@
-const STATIC_CACHE = "static-cache-v6";
-const DYNAMIC_CACHE = "dynamic-cache-v6";
+const STATIC_CACHE = "static-cache-v7";
+const DYNAMIC_CACHE = "dynamic-cache-v7";
 const MAX_CACHE_ITEMS = 50; // Maximum number of items
 
 const ASSETS = [

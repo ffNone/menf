@@ -30,7 +30,7 @@ export default function HeaderSection() {
         <a href="#">Our values <span aria-hidden="true">&rarr;</span></a>
         <a href="#">Meet our leadership <span aria-hidden="true">&rarr;</span></a> */}
       </div>
-      <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+      <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4" style={{textAlign : 'center'}}>
         <div className="flex flex-col-reverse">
           <dt className="text-base leading-7 text-gray-300">Offices worldwide</dt>
           <dd className="text-2xl font-bold leading-9 tracking-tight text-white">5</dd>
