@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ui/gradual-spacing.jsx", "components/ui/box-reveal.jsx", "app/(form)/destinations/layout.jsx", "app/(form)/layout.js", "app/(main)/page.jsx", "app/api/send/route.js", "components/ui/wordeFadeIn.tsx", "components/magicui/word-fade-in.tsx"],
+  "exclude": ["node_modules"]
+}

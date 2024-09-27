@@ -1,0 +1,1 @@
+window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","fr","de","it","es","nl","ar","el","hi","ja","ko","pl","zh-TW","ru","sv","tl"],"wrapper_selector":".gtranslate_wrapper","flag_size":24,"horizontal_position":"right","vertical_position":"bottom","flag_style":"3d"}
