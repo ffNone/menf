@@ -33,14 +33,14 @@ export default function Home() {
             <div>
             <Heading.h2 style={{color: '#00ff92'}}>Customers</Heading.h2>
 
-            <NumberTickerDemo title="K+" style={{color: '#00ff92'}} value={100}/>
+            <NumberTickerDemo title="K+" style={{color: '#00ff92' , textWrap : 'nowrap'}} value={100}/>
             </div>
             <div>
             <Heading.h2 style={{color: '#00ff92'}}>Social Media</Heading.h2>
-            <NumberTickerDemo title="K+" style={{color: '#00ff92' }} value={50}/>
+            <NumberTickerDemo title="K+" style={{color: '#00ff92' , textWrap : 'nowrap' }} value={50}/>
             </div>
             <div>
-            <Heading.h2 style={{color: '#00ff92'}}>Branches</Heading.h2>
+            <Heading.h2 style={{color: '#00ff92' , textWrap : 'nowrap'}}>Branches</Heading.h2>
             <NumberTickerDemo  value={5}/>
             </div>
           </div>
