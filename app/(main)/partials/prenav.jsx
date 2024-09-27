@@ -1,8 +1,8 @@
 'use client'
-import Script from 'next/script'
+
 import { XMarkIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
-import CustomBooking from "../../(form)/customBooking"
+// import CustomBooking from "../../(form)/customBooking"
 export default function Prenav() {
     const [isVisible , setVisible] = useState(true);
     const [isCustomBookingModalOpen, setIsCustomBookingModalOpen] = useState(false);
@@ -78,7 +78,7 @@ export default function Prenav() {
       </div>
     </div>
     )}
-      <CustomBooking isOpen={isCustomBookingModalOpen} onClose={() => setIsCustomBookingModalOpen(false)} />
+      {/* <CustomBooking isOpen={isCustomBookingModalOpen} onClose={() => setIsCustomBookingModalOpen(false)} /> */}
   
   </>
 )

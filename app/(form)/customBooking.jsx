@@ -1,5 +1,5 @@
 'use client'
-import Script from 'next/script'
+
 export default function CustomBooking( {isOpen, onClose} ) {
     const closeModal = (e) => {
         if (e.target === e.currentTarget) {
