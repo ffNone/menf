@@ -9,22 +9,7 @@ export default function Prenav() {
     const toggleCustomBookingModal = () => {
       setIsCustomBookingModalOpen(!isCustomBookingModalOpen)
     }
-
-  const getCurrentDate = () => {
-    const now = new Date();
-    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    
-    return {
-      day: now.getDate(),
-      dayName: dayNames[now.getDay()],
-      month: {
-        number: now.getMonth() + 1
-      },
-      year: now.getFullYear()
-    };
-  }
-
-  const currentDate = getCurrentDate();
+ 
  
   return (
     <>
@@ -56,7 +41,7 @@ export default function Prenav() {
       </div>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p className="text-sm leading-6 text-gray-900">
-          <strong className="font-semibold">{currentDate.dayName} {currentDate.day}-{currentDate.month.number}-{currentDate.year}</strong>
+          <strong className="font-semibold"> </strong>
           <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline h-0.5 w-0.5 fill-current">
             <circle r={1} cx={1} cy={1} />
           </svg>
