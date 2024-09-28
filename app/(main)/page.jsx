@@ -12,13 +12,13 @@ export default function Home() {
  
         <HeaderSection />
 
-        <Divider text="About us" style={{color:'white' , zIndex : '1'}} />
+        <Divider text="About us" style={{color:'white' , zIndex : '1' , backgroundColor : 'rgb(17 24 39 / 1)'}} />
        <About/> 
        
       
 
       
-        <Divider text="Our Stats" style={{color:'white' , zIndex : '1'}} />
+        <Divider text="Our Stats" style={{color:'white' , zIndex : '1' , backgroundColor : 'rgb(17 24 39 / 1)'}} />
         <RetroGridDemo 
         style={{
           backgroundColor: '#363d39fc'
@@ -49,7 +49,7 @@ export default function Home() {
             </div>
           </div>
         } />
-                <Divider text="Newsletter" style={{color:'white' , zIndex : '1'}} />
+                <Divider text="Newsletter" style={{color:'white' , zIndex : '1' , backgroundColor : 'rgb(17 24 39 / 1)'}} />
           <Newsletter/>
         {/* <MarqueeDemo/> */}
    

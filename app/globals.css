@@ -184,6 +184,12 @@ header nav  .child-nav-main
     }
 }
 /*About Section*/
+/*Footer*/
+footer
+{
+    background-color: rgb(17 24 39 / 1) !important;
+}
+/*Footer*/
 /*Custom Booking */
 #form-custom-booking label
 {
