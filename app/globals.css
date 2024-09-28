@@ -249,6 +249,9 @@ header nav  .child-nav-main
 }
 
 /* FUNCTIONS */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
 .z-index-1
 {
     z-index: -1;
