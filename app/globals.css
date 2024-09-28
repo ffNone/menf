@@ -9,6 +9,7 @@
     --main-miny-white : rgb(156 163 175);
     --main-white : rgb(255 255 255) ;
     --main-tiny-black :   rgb(55 65 81 / 1) ;
+ 
 }
  
 /* NAV */
@@ -265,6 +266,7 @@ footer
 {
     color : var(--main-miny-white) !important;
 }
+ 
 /* COLORS */
 .group:hover .group-hover\:text-indigo-600  {
     --tw-bg-opacity : 1;
