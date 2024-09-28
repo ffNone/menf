@@ -4,17 +4,21 @@ import About from './partials/about'
 import NumberTickerDemo from '@/components/ui/numberTicker'
 import RetroGridDemo from '@/components/ui/retroGrid'
 import {Heading} from '@/components/ui/flowbite/headings'
+import Divider from '@/components/ui/divider'
 export default function Home() {
  
   return (
       <>
  
         <HeaderSection />
-        <About/>
+
+        <Divider text="About us" style={{color:'white' , zIndex : '1'}} />
+       <About/> 
        
       
 
       
+        <Divider text="Our Stats" style={{color:'white' , zIndex : '1'}} />
         <RetroGridDemo 
         style={{
           backgroundColor: '#363d39fc'
@@ -45,6 +49,7 @@ export default function Home() {
             </div>
           </div>
         } />
+                <Divider text="Newsletter" style={{color:'white' , zIndex : '1'}} />
           <Newsletter/>
         {/* <MarqueeDemo/> */}
    

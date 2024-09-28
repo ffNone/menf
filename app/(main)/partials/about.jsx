@@ -41,7 +41,7 @@ export default function About() {
  
         <DotPatternDemo  
         id="about-container-main--"
-        className="about-container-main--"
+        className="about-container-main-- "
         style={{   background: "linear-gradient(to right, #6a7b26c9, #0f2e08e8)", position: 'relative', border: '0' , borderRadius : "0" , overflow: 'visible' }}
         children={      <div className="bg-white  "  style={{backgroundColor: 'transparent', padding: '20px'}}>
             <div className="mx-auto max-w-7xl px-6 lg:px-8 aboutUS-container2--" >
