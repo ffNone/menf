@@ -185,6 +185,14 @@ header nav  .child-nav-main
 }
 /*About Section*/
 /*Custom Booking */
+#form-custom-booking label
+{
+    color: white !important;
+}
+#form-custom-booking input, #form-custom-booking textare
+{
+    background-color: rgb(55 65 81 / 1) !important;
+}
 @media (max-width: 778px)
 {
     #date-custom-container

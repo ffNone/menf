@@ -36,7 +36,7 @@ export default function CustomBooking( {isOpen, onClose} ) {
                             </button>
                         </div>
                         {/* Modal body */}
-                        <form className="p-4 md:p-5" method="GET" >
+                        <form className="p-4 md:p-5" method="GET"  id="form-custom-booking">
                             <label for="CUSTOM-FROM" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Destination from</label>
                             <div class="flex">
                                 <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
