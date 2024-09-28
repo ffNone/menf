@@ -17,7 +17,7 @@ export default function LoginForm({ isOpen, onClose }) {
           <div className="relative p-4 w-full max-w-md max-h-full">
             <div className="relative  rounded-lg shadow dark:bg-gray-700     --main-tiny-black "  >
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h3 className="text-xl font-semibold text-gray-900   ">
+                <h3 className="text-xl font-semibold text-gray-900  main-white--">
                   Sign in to our platform
                 </h3>
                 <button
