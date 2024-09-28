@@ -10,12 +10,12 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link href="/" className="flex items-center">
                             <Image src="/imgs/icons/main-logo.ico" width={32} height={32} className="h-8 me-3" alt="Menf International Tours Logo" />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white txt-wrap "  >Menf International Tours</span>
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap   txt-wrap main-white--"  >Menf International Tours</span>
                         </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Destinations</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase  ">Destinations</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <Link href="/destinations/europe" className="hover:underline">Europe</Link>
@@ -26,7 +26,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase  ">Follow us</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <a href="https://facebook.com/menfinternationaltours" className="hover:underline" target="_blank" rel="noopener noreferrer">Facebook</a>
@@ -37,7 +37,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
