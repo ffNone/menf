@@ -199,6 +199,11 @@ footer
 {
     color: white !important;
 }
+#form-custom-booking input:focus, #form-custom-booking textarea:focus
+{
+    border: 1px solid var(--main-blue) !important;
+    outline: none !important;
+}
 #form-custom-booking input, #form-custom-booking textarea
 {
     background-color: rgb(55 65 81 / 1) !important;
