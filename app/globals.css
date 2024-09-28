@@ -263,7 +263,7 @@ footer
 }
 .main-black--
 {
-    color : var(--main-tiny-black) !important;
+    background-color : var(--main-tiny-black) !important;
 }
 .main-white--
 {
