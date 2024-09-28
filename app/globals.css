@@ -9,6 +9,8 @@
     --main-miny-white : rgb(156 163 175);
     --main-white : rgb(255 255 255) ;
     --main-tiny-black :   rgb(55 65 81 / 1) ;
+    --main-grey : rgb(75 85 99 / 1) ;
+    --main-icon-grey : rgb(156 163 175 / 1) ;
  
 }
  
@@ -200,6 +202,7 @@ footer
 #form-custom-booking input, #form-custom-booking textarea
 {
     background-color: rgb(55 65 81 / 1) !important;
+    color: white !important;
 }
 @media (max-width: 778px)
 {
@@ -250,6 +253,14 @@ footer
 /* Media Quries */
 
 /* COLORS */
+.main-grey--
+{
+    background-color : var(--main-grey) !important;
+}
+.main-icon-grey--
+{
+    color : var(--main-icon-grey) !important;
+}
 .main-black--
 {
     color : var(--main-tiny-black) !important;
