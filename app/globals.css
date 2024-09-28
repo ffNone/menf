@@ -67,6 +67,7 @@ header nav  .child-nav-main
     background-repeat: no-repeat;
     position: relative;
     z-index: 9;
+    cursor: pointer;
 }
 .book-custom--:before 
 {

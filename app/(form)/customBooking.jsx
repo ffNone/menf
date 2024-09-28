@@ -37,50 +37,50 @@ export default function CustomBooking( {isOpen, onClose} ) {
                         </div>
                         {/* Modal body */}
                         <form className="p-4 md:p-5" method="GET"  id="form-custom-booking">
-                            <label for="CUSTOM-FROM" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Destination from</label>
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md main-icon-grey-- main-grey-- dark:border-gray-600">
-                                <i class="ph-fill ph-airplane-takeoff" style={{fontSize:'1.1rem'}}></i>
+                            <label htmlFor="CUSTOM-FROM" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Destination from</label>
+                            <div className="flex">
+                                <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md main-icon-grey-- main-grey-- dark:border-gray-600">
+                                <i className="ph-fill ph-airplane-takeoff" style={{fontSize:'1.1rem'}}></i>
                                 </span>
-                                <input type="text" id="CUSTOM-FROM" class="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  placeholder="Egypt" required />
+                                <input type="text" id="CUSTOM-FROM" className="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  placeholder="Egypt" required />
                             </div>
                                 
-                            <label for="CUSTOM-TO" style={{marginTop:'10px'}} class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Destination to</label>
-                            <div class="flex" >
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md main-icon-grey-- main-grey-- dark:border-gray-600">
-                                <i class="ph-fill ph-airplane-landing" style={{fontSize:'1.1rem'}}></i>
+                            <label htmlFor="CUSTOM-TO" style={{marginTop:'10px'}} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Destination to</label>
+                            <div className="flex" >
+                                <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md main-icon-grey-- main-grey-- dark:border-gray-600">
+                                <i className="ph-fill ph-airplane-landing" style={{fontSize:'1.1rem'}}></i>
                                  </span>
-                                <input type="text" id="CUSTOM-TO" class="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required placeholder="Dubai" />
+                                <input type="text" id="CUSTOM-TO" className="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required placeholder="Dubai" />
                             </div>
 
 
                             <div id='date-custom-container' style={{display:'flex' , gap:'10px' }}>
                                 <div className='custom-date-colmn'>
 
-                                    <label for="DATE-FROM" style={{marginTop:'10px'}} class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date from</label>
+                                    <label htmlFor="DATE-FROM" style={{marginTop:'10px'}} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date from</label>
                                     <div className="flex" >
-                                        <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md  main-icon-grey-- main-grey-- dark:border-gray-600">
-                                        <i class="ph-fill ph-calendar-blank" style={{fontSize:'1.1rem'}}></i>
+                                        <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md  main-icon-grey-- main-grey-- dark:border-gray-600">
+                                        <i className="ph-fill ph-calendar-blank" style={{fontSize:'1.1rem'}}></i>
                                         </span>
-                                        <input type="date" min={new Date().toISOString().split('T')[0]} id="DATE-FROM" class="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required   />
+                                        <input type="date" min={new Date().toISOString().split('T')[0]} id="DATE-FROM" className="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required   />
                                     </div>
                                 </div>
 
                                 <div className='custom-date-colmn'>
 
-                                    <label for="DATE-TO" style={{marginTop:'10px'}} class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date to</label>
+                                    <label htmlFor="DATE-TO" style={{marginTop:'10px'}} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date to</label>
                                     <div className="flex"   >
-                                        <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md main-icon-grey-- main-grey-- dark:border-gray-600">
-                                        <i  class="ph-fill ph-calendar-blank" style={{fontSize:'1.1rem'}}></i>
+                                        <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md main-icon-grey-- main-grey-- dark:border-gray-600">
+                                        <i  className="ph-fill ph-calendar-blank" style={{fontSize:'1.1rem'}}></i>
                                         </span>
-                                        <input type="date" min={new Date().toISOString().split('T')[0]} id="DATE-TO" class="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required  />
+                                        <input type="date" min={new Date().toISOString().split('T')[0]} id="DATE-TO" className="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required  />
                                     </div>
                                 </div>
                             </div>
-                            <label for="CUSTOM-SPECIAL-REQUESTS" style={{marginTop:'10px'}} class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Special Requests</label>
-                            <div class="flex" >
+                            <label htmlFor="CUSTOM-SPECIAL-REQUESTS" style={{marginTop:'10px'}} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Special Requests</label>
+                            <div className="flex" >
 
-                                 <textarea style={{resize:'none'}} id="CUSTOM-SPECIAL-REQUESTS" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your special requests here"></textarea>
+                                 <textarea style={{resize:'none'}} id="CUSTOM-SPECIAL-REQUESTS" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your special requests here"></textarea>
                              </div>
                                
 

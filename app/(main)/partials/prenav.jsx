@@ -3,25 +3,34 @@
 import { XMarkIcon } from '@heroicons/react/20/solid'
 import { useState, useEffect } from 'react'
 import CustomBooking from "../../(form)/customBooking"
-
+import $ from 'jquery'
 export default function Prenav() {
     const [isVisible , setVisible] = useState(true);
     const [isCustomBookingModalOpen, setIsCustomBookingModalOpen] = useState(false);
-    const [formattedDate, setFormattedDate] = useState('');
-
-    // Using useEffect to set the date only on the client-side after component mounts
-    useEffect(() => {
-        const date = new Date();
-        const options = { weekday: 'long' }; // Get full name of the day (e.g., "Saturday")
-        const dayName = date.toLocaleDateString('en-US', options);
-        const formattedDate = `${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`; // Format date (e.g., "9/28/2024")
-        setFormattedDate(`${dayName}, ${formattedDate}`);
-    }, []); // Empty dependency array to ensure this runs once after component mounts
-
+ 
     const toggleCustomBookingModal = () => {
         setIsCustomBookingModalOpen(!isCustomBookingModalOpen);
     };
+ 
 
+    useEffect(() => {
+        // This will run after the component mounts, allowing jQuery to update the content
+        if (typeof window !== 'undefined') {
+     
+                const date = new Date();
+                const options = { weekday: 'long' };
+                const dayName = date.toLocaleDateString('en-US', options);
+                const formattedDate = `${dayName}, ${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+                $("#formatted-date").text(formattedDate);
+                let pre_nav_height = $(".pre--nav--").innerHeight();
+                $("header").css("top", pre_nav_height);
+                $(".hide-prenav").on("click", function(){
+                    $("header").animate({
+                        "top": '0'
+                    }, 300)
+                });
+        }
+    }, []);
     return (
         <>
             {isVisible && (
@@ -52,14 +61,14 @@ export default function Prenav() {
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                         <p className="text-sm leading-6 text-gray-900">
-                            <strong className="font-semibold">{formattedDate}</strong>
+                            <strong className="font-semibold" id="formatted-date" ></strong>  
                             <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline h-0.5 w-0.5 fill-current">
                                 <circle r={1} cx={1} cy={1} />
                             </svg>
                             Explore the world with Menf International Tours - Your gateway to unforgettable adventures!
                         </p>
                         <a
-                            style={{cursor : 'pointer'}}
+                    
                             className="book-custom-- flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
                             onClick={toggleCustomBookingModal}
                         >
